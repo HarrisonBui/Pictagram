@@ -13,7 +13,7 @@ class User < ApplicationRecord
   has_attached_file :profile_image,
     styles: { medium: "300x300>", thumb: "100x100>" },
     default_url: "missing_profile_image.jpg"
-  validates_attachment_content_type :profile_image, content_type: /\Aimage\/.*\z/
+  validates_attachment_contcdent_type :profile_image, content_type: /\Aimage\/.*\z/
 
   has_many :images
   has_many :comments
